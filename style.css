@@ -1,0 +1,95 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: hsl(217, 54%, 11%);
+    width: 25%;
+    margin:10% auto;
+    color:white;
+
+}
+p{
+    font-size: 18px;
+}
+div:first-child{
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: auto;
+}
+#main{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 6%;
+}
+h3{
+    grid-column-start:1;
+    grid-column-end:4;
+    color: hsl(0, 0%, 100%);
+}
+#main>img:first-of-type{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    width: 100%;
+    border-radius: 10px;
+}
+h3+p{
+    grid-column-start:1;
+    grid-column-end:4;
+    color: hsl(215, 51%, 70%);
+}
+p:nth-of-type(2){
+    grid-column-start:1;
+    grid-column-end:3;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+    padding: 0px 0px 5px 10px;
+    color: hsl(178, 100%, 50%);
+}
+p:nth-of-type(2) p{
+    margin-left: 10px;
+}
+p:nth-of-type(3){
+    grid-column-start:3;
+    grid-column-end:4;
+    text-align: right;
+    padding: 0px 0px 5px 10px;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+    color: hsl(215, 51%, 70%);
+}
+img[alt="icon-ethereum"],img[alt="icon-clock"]{
+    float: left;
+}
+img[alt="icon-ethereum"]{
+    margin-right: 7px;
+}
+p:last-child{
+    grid-column-start:1;
+    grid-column-end:4;
+    color: hsl(215, 51%, 70%);
+    padding-top: 5px;
+}
+p>span{
+    color: hsl(0, 0%, 100%);
+}
+img[alt="image-avatar"]{
+    width: 20px;
+    float: left;
+    margin-right: 15px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+h3,p{
+    margin-top:15px;
+}
+/*footer*/
+.attribution{
+    margin-top: 20px;
+    font-size: 11px;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color:hsl(178, 100%, 50%);
+
+}
